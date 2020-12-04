@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jonathan McCarthy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div class="top-container">
+  <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+  <h1>I'm Jonathan.</h1>
+  <h2>a <span class="pro">pro</span>grammer.</h2>
+  <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+  <img src="images/mountain.png" alt="mountain-img">
+<!--Block elements. A span allows us to select a section of your text to let
+your format it or style it differently.
+It's considered an inline display element.
+It only takes up as much space that it needs to be.
+Others are images and anchors tags. they don't take up an entire block
+But with inline elements you can't change the width -->
+<!--Position - Static, Relative, Absolute, fixed
+All html elements are static by default. It just means go along with the
+html rules and go by the default
+Relative - it allows us to position our selection relative to
+how it would've been had it been static. Basically any css would be based
+on it's static Position. Remember that if it's moved, it doesn't change
+anything else on the screen. If we say right: 30px, it will move the element
+right of where it used to be.
+Absolute - we are positioning the element relative to it parent.
+So if we say right: 30px, it will all a 30 margin to the right, moving the
+element to the right. Using position: absolute it removes it from the flow of
+the page. So the other elements ignore it.
+If you have a relative div and an absolute element in it, it will be defined by
+the div and not the full body.
+Fixed: it stays in a fixed position no matter what.
+
+
+ -->
+</div>
+<!--div stands for content division element, allowing you
+to divide up your content into boxes -->
+
+<div class="middle-container">
+  <div class="profile">
+    <img class="john" src="images/Jonathan.jpeg" alt="profile">
+    <h2>Hello.</h2>
+    <p class="first-paragraph">I'm a writer, creator, designer of worlds. Developer and junior game creator.</p>
+  </div>
+  <hr>
+  <div class="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row">
+      <img class="dance-image" src="images/3d-printer.png" alt="CG-img">
+      <h3>Design</h3>
+      <p>I create 3D worlds, dreams and video games using various 3d programs. I’m a daydreamer by heart and technology made my dreams possible.</p>
+    </div>
+    <div class="skill-row">
+      <img class="coding-image" src="images\coding.png" alt="coding-img">
+      <h3>Coding</h3>
+      <p>HTML, CSS, JavaScript, Node.js C#, Python, C++, many languages but with a combination of them it makes anything possible.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you're as creative as me.</h3>
+    <p class="last">I don't know what to put here.</p>
+    <a class="btn" href="mailto:jonathan4812@gmail.com">Contact Me</a>
+  </div>
+</div>
+
+
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+  <p class="final-text">© 2021 Jonathan McCarthy.</p>
+</div>
+  </body>
+</html>

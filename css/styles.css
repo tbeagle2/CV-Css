@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif*/
+  /* monospace is the font commonly used in coding programs.
+  so if you have code on the site, people like to use monospace font family*/
+  /* the default is serif. if you want to change the font, put the font
+  in front of the font family with a comma and space. If the browser doesn't
+  have the font, it'll default to the font-family's default
+  You can find web safe fonts which is used by most rendering systems.
+  But not everyone one is 100% safe */
+  /* a site called css font stack will let you chose a fall back font shown
+  above. The green is wat you want and the fall backs afterwards. so there's
+  three fallbacks, helvetica, arial, and then finally the default for san-serif
+  */
+  /* you can get around the issues above if you really want to show the fonts,
+  it's called fonts embedding, you embed it in the head portion of the html*/
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  /*font size is not dynamic, you have to make it using % instead of px.
+  100% is 16px so if we want 90px, we need 562.5 to make the equilivent*/
+  /* Another way is the use em unit. in html it's used to emphasize text
+  It's completely different. it stands for M, which is the width of the
+  capital letter M, so if it's 2em we want it to be twice the width of M.
+  1em is also 16px, which is = to 100%. We can use either 100% or em.
+  562.5% is = to 5.625em.
+  with zoom, it doesn't matter which one is used.
+  */
+  /* super IMPORTANT. The font size gets inherited from the parent if using dynamic,
+  so if the body is 1000%, and you specify the h1 as 200%,
+  it will be adding onto the 1000% defined in the body. */
+  /* rem stands for using the root of the body, so it won't be effected by the
+  parent for it's size */
+  /* USE REM is recommended*/
+  margin: 50px auto 0 auto;
+  /*  margin: 0 auto;
+  margin css mdn for reference */
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* div {
+  background-color: #e3fdfd;
+} */
+hr {
+  border-color: #EAF6F6;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  /* the above is super important for the dot line. Use px and not % */
+  width: 5%;
+  margin: 100px auto;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+.first-paragraph {
+  color: #40514E;
+  margin: 50px auto;
+  width: 30%;
+
+}
+
+.john {
+  border-radius: 50%;
+  width: 12.5%;
+  margin-top: 50px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.dance-image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  /*padding-bottom: 100px;*/
+}
+
+.coding-image {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* .code-skill-description {
+  clear: left;
+  clear is the anti float.
+  float is saying float this image to the left and all the text will wrap around it on the right.
+  clear is making sure the right margin is clear and don't wrap anything around it.
+  preventing it from doing the default behavior.
+  you have to make a class for the text, paragraph in this instance for it to work.
+
+  only use float WHEN NEEDED, not for positioning!! only for wrapping text
+
+}
+
+.floating {
+  clear: right;
+}
+*/
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.middle-container {
+  margin: 100px 0;
+}
+.bottom-container {
+  background-color: #66BFBF;
+padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+
+.final-text {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.contact-me {
+  margin: 4rem;
+}
+
+.last {
+  margin: 3rem;
+}
+
+.btn {
+  background: #66BFBF;
+  background-image: -webkit-linear-gradient(top, #66BFBF, #4f8c8c);
+  background-image: -moz-linear-gradient(top, #66BFBF, #4f8c8c);
+  background-image: -ms-linear-gradient(top, #66BFBF, #4f8c8c);
+  background-image: -o-linear-gradient(top, #66BFBF, #4f8c8c);
+  background-image: linear-gradient(to bottom, #66BFBF, #4f8c8c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
